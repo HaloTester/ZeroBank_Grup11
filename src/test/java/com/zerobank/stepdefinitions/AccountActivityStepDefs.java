@@ -24,8 +24,13 @@ public class AccountActivityStepDefs {
         Select temp = new Select(new AccountActivityPage().savings);
         List<WebElement> allOptions = temp.getOptions();
         List<String> actualOptions = BrowserUtils.getElementsText(allOptions);
-        System.out.println("actualOptions = " + actualOptions);
         Assert.assertEquals(expectedOptions,actualOptions);
+    }
+
+    @Then("Transactions table should have to following columns")
+    public void transactions_table_should_have_to_following_columns(List<String> expectedColumnNames) {
+        List<String> actualColumnNames = BrowserUtils.getElementsText(new AccountActivityPage().columnNames);
+        Assert.assertEquals(expectedColumnNames,actualColumnNames);
     }
 
 }

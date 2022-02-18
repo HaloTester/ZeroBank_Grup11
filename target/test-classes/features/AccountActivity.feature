@@ -10,6 +10,7 @@ Feature: Account Activity Page
 
   Scenario: Verify drop down default option
     Then the user should be able to see "Savings" as a default	option
+
   @wip
   Scenario: Verify drop down options
     Then the user should be able to see following options
@@ -18,3 +19,10 @@ Feature: Account Activity Page
       | Loan        |
       | Credit Card |
       | Brokerage   |
+  @wip
+  Scenario: Verify column names
+    Then Transactions table should have to following columns
+      | Date        |
+      | Description |
+      | Deposit     |
+      | Withdrawal  |

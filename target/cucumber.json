@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1979026000,
+              "duration": 1845318300,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2217339300,
+              "duration": 2080532300,
               "status": "passed"
             },
             "line": 5,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 1248898600,
+              "duration": 1913963400,
               "status": "passed"
             },
             "line": 6,
@@ -64,11 +64,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-02-18T22:02:17.058Z",
+        "start_timestamp": "2022-02-18T22:15:41.110Z",
         "before": [
           {
             "result": {
-              "duration": 6037686800,
+              "duration": 5593605100,
               "status": "passed"
             },
             "match": {
@@ -76,7 +76,7 @@
             }
           }
         ],
-        "line": 14,
+        "line": 15,
         "name": "Verify drop down options",
         "description": "",
         "id": "account-activity-page;verify-drop-down-options",
@@ -90,7 +90,7 @@
               }
             ],
             "result": {
-              "duration": 1324551300,
+              "duration": 1381509900,
               "status": "passed"
             },
             "match": {
@@ -103,11 +103,11 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c[Savings, Checking, Loan, Credit Card, Brokerage]\u003e but was:\u003c[Savings, Checking, Savings, Loan, Credit Card, Brokerage]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.zerobank.stepdefinitions.AccountActivityStepDefs.the_user_should_be_able_to_see_following_options(AccountActivityStepDefs.java:28)\r\n\tat ✽.the user should be able to see following options(file:///C:/Users/Admin/IdeaProjects/zerobank-automation/src/test/resources/features/AccountActivity.feature:15)\r\n",
-              "duration": 326628200,
+              "error_message": "java.lang.AssertionError: expected:\u003c[Savings, Checking, Loan, Credit Card, Brokerage]\u003e but was:\u003c[Savings, Checking, Savings, Loan, Credit Card, Brokerage]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.zerobank.stepdefinitions.AccountActivityStepDefs.the_user_should_be_able_to_see_following_options(AccountActivityStepDefs.java:28)\r\n\tat ✽.the user should be able to see following options(file:///C:/Users/Admin/IdeaProjects/zerobank-automation/src/test/resources/features/AccountActivity.feature:16)\r\n",
+              "duration": 419337700,
               "status": "failed"
             },
-            "line": 15,
+            "line": 16,
             "name": "the user should be able to see following options",
             "match": {
               "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.the_user_should_be_able_to_see_following_options(java.util.List\u003cjava.lang.String\u003e)"
@@ -136,6 +136,139 @@
               {
                 "cells": [
                   "Brokerage"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1746283200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1983480300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user enters \"username\" \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_enters(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1062137900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the \"Account Activity\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account Activity\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummaryStepDefs.the_user_is_on_the_page(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-02-18T22:15:54.525Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2657714600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify column names",
+        "description": "",
+        "id": "account-activity-page;verify-column-names",
+        "after": [
+          {
+            "result": {
+              "duration": 872470800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 279596600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Transactions table should have to following columns",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccountActivityStepDefs.transactions_table_should_have_to_following_columns(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Date"
+                ]
+              },
+              {
+                "cells": [
+                  "Description"
+                ]
+              },
+              {
+                "cells": [
+                  "Deposit"
+                ]
+              },
+              {
+                "cells": [
+                  "Withdrawal"
                 ]
               }
             ],
